@@ -1,0 +1,18 @@
+{% raw %}<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Observation/example: Observation.code</td><td>Wrong Display Name 'VS1' for http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake#01 - should be one of 2 choices: 'CS1' or 'CS2' (for the language(s) '--')</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Observation/example: Observation.code</td><td>Wrong Display Name 'VS2' for http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake#01 - should be one of 2 choices: 'CS1' or 'CS2' (for the language(s) '--')</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Observation/example: Observation</td><td>Observation.category: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Observation/example: Observation</td><td>Observation.category:VSCat: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Observation/example: Observation</td><td>Observation.subject: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Observation/example: Observation</td><td>Observation.effective[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Observation/example: Observation.component[0].value.ofType(Quantity)</td><td>Observation.component:SystolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Observation/example: Observation.component[1].value.ofType(Quantity)</td><td>Observation.component:DiastolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>Observation/example: Observation</td><td>Best Practice Recommendation: In general, all observations should have a subject</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>Observation/example: Observation</td><td>Best Practice Recommendation: In general, all observations should have a performer</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>Observation/example: Observation</td><td>Best Practice Recommendation: In general, all observations should have an effective[x] ()</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>Observation/example: Observation</td><td>Validate resource against profile http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation|0.2.0</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>Observation/example: Observation</td><td>Validate Observation against the Blood pressure systolic and diastolic profile (http://hl7.org/fhir/StructureDefinition/bp) which is required by the FHIR specification because the LOINC code 85354-9 was found</td><td></td></tr>
+<tr><td>information</td><td>business-rule</td><td>Observation/example: Observation.code</td><td>Reference to experimental item http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0</td><td></td></tr>
+</table>
+{% endraw %}

@@ -1,0 +1,1013 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion",
+         "signatureLevel" : "None",
+         "type" : "CqlToElmInfo"
+      }, {
+         "message" : "The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "message" : "The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "message" : "The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "message" : "The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "message" : "The function FHIRHelpers.ToDateTime has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "message" : "The function FHIRHelpers.ToDateTime has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "type" : "Annotation",
+         "s" : {
+            "r" : "65",
+            "s" : [ {
+               "value" : [ "","library example version '1.0.0'" ]
+            } ]
+         }
+      } ],
+      "identifier" : {
+         "id" : "example",
+         "system" : "http://somewhere.org/fhir/uv/myig",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localId" : "1",
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "1",
+                  "s" : [ {
+                     "value" : [ "","using " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIR" ]
+                     } ]
+                  }, {
+                     "value" : [ " version '4.0.1'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localId" : "2",
+            "locator" : "5:1-5:51",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "http://fhir.org/guides/cqf/common/FHIRHelpers",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "2",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "fhir",".","cqf",".","common",".","FHIRHelpers" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'4.0.1'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "parameters" : {
+         "def" : [ {
+            "localId" : "13",
+            "locator" : "18:1-18:49",
+            "name" : "Measurement Period",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "13",
+                  "s" : [ {
+                     "value" : [ "","parameter ","\"Measurement Period\""," " ]
+                  }, {
+                     "r" : "12",
+                     "s" : [ {
+                        "value" : [ "Interval<" ]
+                     }, {
+                        "r" : "11",
+                        "s" : [ {
+                           "value" : [ "DateTime" ]
+                        } ]
+                     }, {
+                        "value" : [ ">" ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "parameterTypeSpecifier" : {
+               "localId" : "12",
+               "locator" : "18:32-18:49",
+               "type" : "IntervalTypeSpecifier",
+               "pointType" : {
+                  "localId" : "11",
+                  "locator" : "18:41-18:48",
+                  "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                  "type" : "NamedTypeSpecifier"
+               }
+            }
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "localId" : "3",
+            "locator" : "7:1-7:101",
+            "name" : "Observation Category Codes",
+            "id" : "http://terminology.hl7.org/CodeSystem/observation-category",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "3",
+                  "s" : [ {
+                     "value" : [ "","codesystem ","\"Observation Category Codes\"",": ","'http://terminology.hl7.org/CodeSystem/observation-category'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "localId" : "4",
+            "locator" : "9:1-9:100",
+            "name" : "Encounter Inpatient",
+            "id" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "4",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"Encounter Inpatient\"",": ","'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "5",
+            "locator" : "10:1-10:111",
+            "name" : "Emergency Department Visit",
+            "id" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "5",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"Emergency Department Visit\"",": ","'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "6",
+            "locator" : "11:1-11:112",
+            "name" : "Telephone Evaluation",
+            "id" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1082",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "6",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"Telephone Evaluation\"",": ","'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1082'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "7",
+            "locator" : "12:1-12:112",
+            "name" : "Telephone Management",
+            "id" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1053",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "7",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"Telephone Management\"",": ","'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1053'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "8",
+            "locator" : "14:1-14:43",
+            "name" : "COVID-19 Screening Result",
+            "id" : "TBD",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "8",
+                  "s" : [ {
+                     "value" : [ "","valueset ","\"COVID-19 Screening Result\"",": ","'TBD'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "localId" : "10",
+            "locator" : "16:1-16:86",
+            "name" : "Laboratory Observation Category",
+            "id" : "laboratory",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "10",
+                  "s" : [ {
+                     "value" : [ "","code ","\"Laboratory Observation Category\"",": ","'laboratory'"," from " ]
+                  }, {
+                     "r" : "9",
+                     "s" : [ {
+                        "value" : [ "\"Observation Category Codes\"" ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "codeSystem" : {
+               "localId" : "9",
+               "locator" : "16:59-16:86",
+               "name" : "Observation Category Codes"
+            }
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "locator" : "20:1-20:15",
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "locator" : "20:1-20:15",
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "locator" : "20:1-20:15",
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "localId" : "33",
+            "locator" : "22:1-30:54",
+            "name" : "Inpatient, Emergency, or Telephone Evaluation or Management Encounter",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "33",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Inpatient, Emergency, or Telephone Evaluation or Management Encounter\"",":\n  " ]
+                  }, {
+                     "r" : "32",
+                     "s" : [ {
+                        "s" : [ {
+                           "r" : "22",
+                           "s" : [ {
+                              "r" : "21",
+                              "s" : [ {
+                                 "value" : [ "(\n    " ]
+                              }, {
+                                 "r" : "21",
+                                 "s" : [ {
+                                    "r" : "18",
+                                    "s" : [ {
+                                       "r" : "16",
+                                       "s" : [ {
+                                          "r" : "14",
+                                          "s" : [ {
+                                             "value" : [ "[","Encounter",": " ]
+                                          }, {
+                                             "s" : [ {
+                                                "value" : [ "\"Encounter Inpatient\"" ]
+                                             } ]
+                                          }, {
+                                             "value" : [ "]" ]
+                                          } ]
+                                       }, {
+                                          "value" : [ "\n      union " ]
+                                       }, {
+                                          "r" : "15",
+                                          "s" : [ {
+                                             "value" : [ "[","Encounter",": " ]
+                                          }, {
+                                             "s" : [ {
+                                                "value" : [ "\"Emergency Department Visit\"" ]
+                                             } ]
+                                          }, {
+                                             "value" : [ "]" ]
+                                          } ]
+                                       } ]
+                                    }, {
+                                       "value" : [ "\n      union " ]
+                                    }, {
+                                       "r" : "17",
+                                       "s" : [ {
+                                          "value" : [ "[","Encounter",": " ]
+                                       }, {
+                                          "s" : [ {
+                                             "value" : [ "\"Telephone Evaluation\"" ]
+                                          } ]
+                                       }, {
+                                          "value" : [ "]" ]
+                                       } ]
+                                    } ]
+                                 }, {
+                                    "value" : [ "\n      union " ]
+                                 }, {
+                                    "r" : "19",
+                                    "s" : [ {
+                                       "value" : [ "[","Encounter",": " ]
+                                    }, {
+                                       "s" : [ {
+                                          "value" : [ "\"Telephone Management\"" ]
+                                       } ]
+                                    }, {
+                                       "value" : [ "]" ]
+                                    } ]
+                                 } ]
+                              }, {
+                                 "value" : [ "\n  )" ]
+                              } ]
+                           }, {
+                              "value" : [ " ","Encounter" ]
+                           } ]
+                        } ]
+                     }, {
+                        "value" : [ "\n    " ]
+                     }, {
+                        "r" : "31",
+                        "s" : [ {
+                           "value" : [ "where " ]
+                        }, {
+                           "r" : "31",
+                           "s" : [ {
+                              "r" : "26",
+                              "s" : [ {
+                                 "r" : "24",
+                                 "s" : [ {
+                                    "r" : "23",
+                                    "s" : [ {
+                                       "value" : [ "Encounter" ]
+                                    } ]
+                                 }, {
+                                    "value" : [ "." ]
+                                 }, {
+                                    "r" : "24",
+                                    "s" : [ {
+                                       "value" : [ "status" ]
+                                    } ]
+                                 } ]
+                              }, {
+                                 "value" : [ " ","="," " ]
+                              }, {
+                                 "r" : "25",
+                                 "s" : [ {
+                                    "value" : [ "'finished'" ]
+                                 } ]
+                              } ]
+                           }, {
+                              "value" : [ "\n      and " ]
+                           }, {
+                              "r" : "30",
+                              "s" : [ {
+                                 "r" : "28",
+                                 "s" : [ {
+                                    "r" : "27",
+                                    "s" : [ {
+                                       "value" : [ "Encounter" ]
+                                    } ]
+                                 }, {
+                                    "value" : [ "." ]
+                                 }, {
+                                    "r" : "28",
+                                    "s" : [ {
+                                       "value" : [ "period" ]
+                                    } ]
+                                 } ]
+                              }, {
+                                 "r" : "30",
+                                 "value" : [ " ","during"," " ]
+                              }, {
+                                 "r" : "29",
+                                 "s" : [ {
+                                    "value" : [ "\"Measurement Period\"" ]
+                                 } ]
+                              } ]
+                           } ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "32",
+               "locator" : "23:3-30:54",
+               "type" : "Query",
+               "source" : [ {
+                  "localId" : "22",
+                  "locator" : "23:3-28:13",
+                  "alias" : "Encounter",
+                  "expression" : {
+                     "localId" : "21",
+                     "locator" : "23:3-28:3",
+                     "type" : "Union",
+                     "operand" : [ {
+                        "localId" : "16",
+                        "locator" : "24:5-25:53",
+                        "type" : "Union",
+                        "operand" : [ {
+                           "localId" : "14",
+                           "locator" : "24:5-24:38",
+                           "dataType" : "{http://hl7.org/fhir}Encounter",
+                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                           "codeProperty" : "type",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "locator" : "24:17-24:37",
+                              "name" : "Encounter Inpatient",
+                              "preserve" : true,
+                              "type" : "ValueSetRef"
+                           }
+                        }, {
+                           "localId" : "15",
+                           "locator" : "25:13-25:53",
+                           "dataType" : "{http://hl7.org/fhir}Encounter",
+                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                           "codeProperty" : "type",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "locator" : "25:25-25:52",
+                              "name" : "Emergency Department Visit",
+                              "preserve" : true,
+                              "type" : "ValueSetRef"
+                           }
+                        } ]
+                     }, {
+                        "localId" : "20",
+                        "type" : "Union",
+                        "operand" : [ {
+                           "localId" : "17",
+                           "locator" : "26:13-26:47",
+                           "dataType" : "{http://hl7.org/fhir}Encounter",
+                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                           "codeProperty" : "type",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "locator" : "26:25-26:46",
+                              "name" : "Telephone Evaluation",
+                              "preserve" : true,
+                              "type" : "ValueSetRef"
+                           }
+                        }, {
+                           "localId" : "19",
+                           "locator" : "27:13-27:47",
+                           "dataType" : "{http://hl7.org/fhir}Encounter",
+                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                           "codeProperty" : "type",
+                           "codeComparator" : "in",
+                           "type" : "Retrieve",
+                           "codes" : {
+                              "locator" : "27:25-27:46",
+                              "name" : "Telephone Management",
+                              "preserve" : true,
+                              "type" : "ValueSetRef"
+                           }
+                        } ]
+                     } ]
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "localId" : "31",
+                  "locator" : "29:5-30:54",
+                  "type" : "And",
+                  "operand" : [ {
+                     "localId" : "26",
+                     "locator" : "29:11-29:39",
+                     "type" : "Equal",
+                     "operand" : [ {
+                        "name" : "ToString",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "localId" : "24",
+                           "locator" : "29:11-29:26",
+                           "path" : "status",
+                           "scope" : "Encounter",
+                           "type" : "Property"
+                        } ]
+                     }, {
+                        "localId" : "25",
+                        "locator" : "29:30-29:39",
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "finished",
+                        "type" : "Literal"
+                     } ]
+                  }, {
+                     "localId" : "30",
+                     "locator" : "30:11-30:54",
+                     "type" : "IncludedIn",
+                     "operand" : [ {
+                        "name" : "ToInterval",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "localId" : "28",
+                           "locator" : "30:11-30:26",
+                           "path" : "period",
+                           "scope" : "Encounter",
+                           "type" : "Property"
+                        } ]
+                     }, {
+                        "localId" : "29",
+                        "locator" : "30:35-30:54",
+                        "name" : "Measurement Period",
+                        "type" : "ParameterRef"
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "localId" : "36",
+            "locator" : "32:1-33:82",
+            "name" : "Initial Population",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "36",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Initial Population\"",":\n  " ]
+                  }, {
+                     "r" : "35",
+                     "s" : [ {
+                        "value" : [ "exists " ]
+                     }, {
+                        "r" : "34",
+                        "s" : [ {
+                           "value" : [ "(" ]
+                        }, {
+                           "r" : "34",
+                           "s" : [ {
+                              "value" : [ "\"Inpatient, Emergency, or Telephone Evaluation or Management Encounter\"" ]
+                           } ]
+                        }, {
+                           "value" : [ ")" ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "35",
+               "locator" : "33:3-33:82",
+               "type" : "Exists",
+               "operand" : {
+                  "localId" : "34",
+                  "locator" : "33:10-33:82",
+                  "name" : "Inpatient, Emergency, or Telephone Evaluation or Management Encounter",
+                  "type" : "ExpressionRef"
+               }
+            }
+         }, {
+            "localId" : "38",
+            "locator" : "35:1-36:6",
+            "name" : "Denominator",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "38",
+                  "s" : [ {
+                     "r" : "37",
+                     "value" : [ "","define ","\"Denominator\"",":\n  ","true" ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "37",
+               "locator" : "36:3-36:6",
+               "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+               "value" : "true",
+               "type" : "Literal"
+            }
+         }, {
+            "localId" : "62",
+            "locator" : "38:1-42:54",
+            "name" : "COVID-19 Communicable Disease Screening",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "62",
+                  "s" : [ {
+                     "value" : [ "","define ","\"COVID-19 Communicable Disease Screening\"",":\n  " ]
+                  }, {
+                     "r" : "61",
+                     "s" : [ {
+                        "s" : [ {
+                           "r" : "40",
+                           "s" : [ {
+                              "r" : "39",
+                              "s" : [ {
+                                 "r" : "39",
+                                 "s" : [ {
+                                    "value" : [ "[","Observation",": " ]
+                                 }, {
+                                    "s" : [ {
+                                       "value" : [ "\"COVID-19 Screening Result\"" ]
+                                    } ]
+                                 }, {
+                                    "value" : [ "]" ]
+                                 } ]
+                              } ]
+                           }, {
+                              "value" : [ " ","Result" ]
+                           } ]
+                        } ]
+                     }, {
+                        "value" : [ "\n    " ]
+                     }, {
+                        "r" : "60",
+                        "s" : [ {
+                           "value" : [ "where " ]
+                        }, {
+                           "r" : "60",
+                           "s" : [ {
+                              "r" : "55",
+                              "s" : [ {
+                                 "r" : "47",
+                                 "s" : [ {
+                                    "value" : [ "exists " ]
+                                 }, {
+                                    "r" : "46",
+                                    "s" : [ {
+                                       "value" : [ "(" ]
+                                    }, {
+                                       "r" : "46",
+                                       "s" : [ {
+                                          "s" : [ {
+                                             "r" : "42",
+                                             "s" : [ {
+                                                "r" : "41",
+                                                "s" : [ {
+                                                   "s" : [ {
+                                                      "value" : [ "Result",".","category" ]
+                                                   } ]
+                                                } ]
+                                             }, {
+                                                "value" : [ " ","C" ]
+                                             } ]
+                                          } ]
+                                       }, {
+                                          "value" : [ " " ]
+                                       }, {
+                                          "r" : "45",
+                                          "s" : [ {
+                                             "value" : [ "where " ]
+                                          }, {
+                                             "r" : "45",
+                                             "s" : [ {
+                                                "r" : "43",
+                                                "s" : [ {
+                                                   "value" : [ "C" ]
+                                                } ]
+                                             }, {
+                                                "value" : [ " ","~"," " ]
+                                             }, {
+                                                "r" : "44",
+                                                "s" : [ {
+                                                   "value" : [ "\"Laboratory Observation Category\"" ]
+                                                } ]
+                                             } ]
+                                          } ]
+                                       } ]
+                                    }, {
+                                       "value" : [ ")" ]
+                                    } ]
+                                 } ]
+                              }, {
+                                 "value" : [ "\n      and " ]
+                              }, {
+                                 "r" : "54",
+                                 "s" : [ {
+                                    "r" : "49",
+                                    "s" : [ {
+                                       "r" : "48",
+                                       "s" : [ {
+                                          "value" : [ "Result" ]
+                                       } ]
+                                    }, {
+                                       "value" : [ "." ]
+                                    }, {
+                                       "r" : "49",
+                                       "s" : [ {
+                                          "value" : [ "status" ]
+                                       } ]
+                                    } ]
+                                 }, {
+                                    "value" : [ " in " ]
+                                 }, {
+                                    "r" : "53",
+                                    "s" : [ {
+                                       "value" : [ "{ " ]
+                                    }, {
+                                       "r" : "50",
+                                       "s" : [ {
+                                          "value" : [ "'final'" ]
+                                       } ]
+                                    }, {
+                                       "value" : [ ", " ]
+                                    }, {
+                                       "r" : "51",
+                                       "s" : [ {
+                                          "value" : [ "'amended'" ]
+                                       } ]
+                                    }, {
+                                       "value" : [ ", " ]
+                                    }, {
+                                       "r" : "52",
+                                       "s" : [ {
+                                          "value" : [ "'corrected'" ]
+                                       } ]
+                                    }, {
+                                       "value" : [ " }" ]
+                                    } ]
+                                 } ]
+                              } ]
+                           }, {
+                              "value" : [ "\n      and " ]
+                           }, {
+                              "r" : "59",
+                              "s" : [ {
+                                 "r" : "57",
+                                 "s" : [ {
+                                    "r" : "56",
+                                    "s" : [ {
+                                       "value" : [ "Result" ]
+                                    } ]
+                                 }, {
+                                    "value" : [ "." ]
+                                 }, {
+                                    "r" : "57",
+                                    "s" : [ {
+                                       "value" : [ "effective" ]
+                                    } ]
+                                 } ]
+                              }, {
+                                 "r" : "59",
+                                 "value" : [ " ","during"," " ]
+                              }, {
+                                 "r" : "58",
+                                 "s" : [ {
+                                    "value" : [ "\"Measurement Period\"" ]
+                                 } ]
+                              } ]
+                           } ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "61",
+               "locator" : "39:3-42:54",
+               "type" : "Query",
+               "source" : [ {
+                  "localId" : "40",
+                  "locator" : "39:3-39:51",
+                  "alias" : "Result",
+                  "expression" : {
+                     "localId" : "39",
+                     "locator" : "39:3-39:44",
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "codes" : {
+                        "locator" : "39:17-39:43",
+                        "name" : "COVID-19 Screening Result",
+                        "preserve" : true,
+                        "type" : "ValueSetRef"
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "localId" : "60",
+                  "locator" : "40:5-42:54",
+                  "type" : "And",
+                  "operand" : [ {
+                     "localId" : "55",
+                     "locator" : "40:11-41:62",
+                     "type" : "And",
+                     "operand" : [ {
+                        "localId" : "47",
+                        "locator" : "40:11-40:80",
+                        "type" : "Exists",
+                        "operand" : {
+                           "localId" : "46",
+                           "locator" : "40:18-40:80",
+                           "type" : "Query",
+                           "source" : [ {
+                              "localId" : "42",
+                              "locator" : "40:19-40:35",
+                              "alias" : "C",
+                              "expression" : {
+                                 "localId" : "41",
+                                 "locator" : "40:19-40:33",
+                                 "path" : "category",
+                                 "scope" : "Result",
+                                 "type" : "Property"
+                              }
+                           } ],
+                           "relationship" : [ ],
+                           "where" : {
+                              "localId" : "45",
+                              "locator" : "40:37-40:79",
+                              "type" : "Equivalent",
+                              "operand" : [ {
+                                 "name" : "ToConcept",
+                                 "libraryName" : "FHIRHelpers",
+                                 "type" : "FunctionRef",
+                                 "operand" : [ {
+                                    "localId" : "43",
+                                    "locator" : "40:43",
+                                    "name" : "C",
+                                    "type" : "AliasRef"
+                                 } ]
+                              }, {
+                                 "type" : "ToConcept",
+                                 "operand" : {
+                                    "localId" : "44",
+                                    "locator" : "40:47-40:79",
+                                    "name" : "Laboratory Observation Category",
+                                    "type" : "CodeRef"
+                                 }
+                              } ]
+                           }
+                        }
+                     }, {
+                        "localId" : "54",
+                        "locator" : "41:11-41:62",
+                        "type" : "In",
+                        "operand" : [ {
+                           "name" : "ToString",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "localId" : "49",
+                              "locator" : "41:11-41:23",
+                              "path" : "status",
+                              "scope" : "Result",
+                              "type" : "Property"
+                           } ]
+                        }, {
+                           "localId" : "53",
+                           "locator" : "41:28-41:62",
+                           "type" : "List",
+                           "element" : [ {
+                              "localId" : "50",
+                              "locator" : "41:30-41:36",
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "final",
+                              "type" : "Literal"
+                           }, {
+                              "localId" : "51",
+                              "locator" : "41:39-41:47",
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "amended",
+                              "type" : "Literal"
+                           }, {
+                              "localId" : "52",
+                              "locator" : "41:50-41:60",
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "corrected",
+                              "type" : "Literal"
+                           } ]
+                        } ]
+                     } ]
+                  }, {
+                     "localId" : "59",
+                     "locator" : "42:11-42:54",
+                     "type" : "IncludedIn",
+                     "operand" : [ {
+                        "name" : "ToInterval",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}Period",
+                           "type" : "As",
+                           "operand" : {
+                              "localId" : "57",
+                              "locator" : "42:11-42:26",
+                              "path" : "effective",
+                              "scope" : "Result",
+                              "type" : "Property"
+                           }
+                        } ]
+                     }, {
+                        "localId" : "58",
+                        "locator" : "42:35-42:54",
+                        "name" : "Measurement Period",
+                        "type" : "ParameterRef"
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "localId" : "65",
+            "locator" : "44:1-45:52",
+            "name" : "Numerator",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "65",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Numerator\"",":\n  " ]
+                  }, {
+                     "r" : "64",
+                     "s" : [ {
+                        "value" : [ "exists " ]
+                     }, {
+                        "r" : "63",
+                        "s" : [ {
+                           "value" : [ "(" ]
+                        }, {
+                           "r" : "63",
+                           "s" : [ {
+                              "value" : [ "\"COVID-19 Communicable Disease Screening\"" ]
+                           } ]
+                        }, {
+                           "value" : [ ")" ]
+                        } ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "64",
+               "locator" : "45:3-45:52",
+               "type" : "Exists",
+               "operand" : {
+                  "localId" : "63",
+                  "locator" : "45:10-45:52",
+                  "name" : "COVID-19 Communicable Disease Screening",
+                  "type" : "ExpressionRef"
+               }
+            }
+         } ]
+      }
+   }
+}

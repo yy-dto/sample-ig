@@ -1,0 +1,17 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\input\myig.xml	8883	-	0	0	0	0	0	0	4	131	0	0	0	0	0	0	0	2	0	0	270	150	0	0	0	4	0	2
+input/examples/Binary-example.json	958200	71	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5579	211	0	0	0	0	0	0
+input/examples/Library-example.json	646	14	1	0	0	0	0	0	0	124	0	0	0	0	0	0	0	0	0	0	672	60	0	0	0	8	0	0
+input/examples/Observation-example.xml	1786	37	0	0	0	0	0	0	0	62	0	0	0	0	0	0	0	0	0	0	29	30	0	0	0	0	0	0
+input/examples/Patient-example.xml	1080	24	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	19	26	0	0	0	0	0	0
+input/history/h1.json	1535	16	0	0	0	0	20	0	0	59	0	0	0	0	0	0	0	0	0	9	33	26	0	0	0	0	0	0
+input/resources/MyLogical.xml	1341	21	0	0	0	0	0	30	0	75	0	0	1	0	0	0	0	1	0	0	137	1056	0	0	0	4	0	1
+input/resources/codesystem-fake.xml	726	15	0	0	0	0	0	0	1	19	0	0	0	0	0	0	0	0	0	0	29	1480	0	1	0	0	0	0
+input/resources/library-example-image.xml	7457	15	1	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	61	22	0	0	0	1	0	0
+input/resources/library-example-sql.xml	843	13	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	24	18	0	0	0	0	0	0
+input/resources/myObservation.xml	12526	87	0	0	0	0	0	460	0	452	0	0	0	0	0	0	0	4	0	0	1290	2535	0	0	0	16	0	4
+input/resources/valueset-fake.xml	819	13	0	0	0	0	0	0	0	104	0	0	0	0	0	0	0	0	0	0	26	5186	0	0	1	1	0	0
+input/resources/valueset-no-codesystem.xml	913	15	1	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	29	65	0	0	0	0	0	0
+\input\resources\resources-spreadsheet.xml	645230	-	0	0	0	0	0	429	0	430	0	0	0	0	0	0	0	3	0	0	1122	1610	0	0	0	14	0	4
+\input\examples\binary-logical-example.xml	139	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	19	0	0	0	0	0	0
+\input\examples\Binary-image-example.jpg	30849	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	238	21	0	0	0	0	0	0
