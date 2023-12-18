@@ -397,6 +397,7 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-.input-cache/
-.temp/
-.template/
+input-cache/*
+temp/*
+template/*
+input-cache/publisher.jar
